@@ -5,9 +5,9 @@
                 <th>Avatar</th>
                 <th>Nombre</th>
                 <th>Correo</th>
-                <th>Usuario</th>
-                <th>Dirección</th>
-                <th>Web personal</th>
+                <th class="responsive-table">Usuario</th>
+                <th class="responsive-table">Dirección</th>
+                <th class="responsive-table">Web personal</th>
             </tr>
         </thead>
         <tbody>
@@ -15,9 +15,9 @@
                 <td class="td-image"><img [src]="usuario.foto" [alt]="usuario.foto" class="imagen-table"></td>
                 <td>{{usuario.name}}</td>
                 <td>{{usuario.email}}</td>
-                <td>{{usuario.username}}</td>
-                <td>{{usuario.address.street}}, {{usuario.address.city}}</td>
-                <td>{{usuario.website}}</td>
+                <td class="responsive-table">{{usuario.username}}</td>
+                <td class="responsive-table">{{usuario.address.street}}, {{usuario.address.city}}</td>
+                <td class="responsive-table">{{usuario.website}}</td>
             </tr>
         </tbody>
     </table>

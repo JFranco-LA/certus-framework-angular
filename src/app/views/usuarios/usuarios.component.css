@@ -42,3 +42,30 @@ tr:hover{
     background-color: #003e57;
     color: var(--text-primary);
 }
+
+@media (max-width: 600px) {
+    .table-users__container{
+        max-width: 500px;
+        padding: 0rem 1rem;
+    }
+
+    thead {
+        font-size: 1.05rem;
+    }
+
+    tbody{
+        font-size: 1.15rem;
+    }
+
+    .imagen-table{
+        height: 1.75rem;
+    }
+
+    .responsive-table{
+        display: none;
+    }
+
+    th, td {
+        padding: .25rem 1rem;
+    }
+}

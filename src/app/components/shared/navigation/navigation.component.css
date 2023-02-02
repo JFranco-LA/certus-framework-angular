@@ -45,3 +45,20 @@
     color: var(--text-primary);
     cursor: pointer;
 }   
+
+
+@media (max-width: 600px) {
+    .navigation-container{
+        width: 500px;
+    }
+    
+    .nav{
+        font-size: 1rem;
+        /* justify-content: center; */
+        /* gap: 4  rem; */
+    }
+
+    .links-container{
+        gap: 1rem;
+    }
+}

@@ -122,3 +122,15 @@
     border-radius: .25rem;
     padding: 5px 10px !important;
 }
+
+@media (max-width: 700px) {
+    .form-container{
+        width: 90vw;
+        align-items: center;
+    }
+
+    .text{
+        margin: 0;
+        width: 60vw;
+    }
+}

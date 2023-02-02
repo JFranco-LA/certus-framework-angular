@@ -27,3 +27,10 @@ h1, h2, h3, h4, h5, h6, p {
 
     --shadow-box: 0px 3px 6px 1px #242424bb;
 }
+
+@media (max-width: 600px) {
+    body{
+        width: 500px;
+        overflow-x: hidden;
+    }
+}
