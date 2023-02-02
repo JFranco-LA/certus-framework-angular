@@ -19,12 +19,12 @@
     padding-left: 1rem;
 }
 
-.form__title{
+.form__title {
     font-size: 2.45rem;
     margin-bottom: 1rem;
 }
 
-.text{
+.text {
     margin-top: .85rem;
     padding-left: 1rem;
     color: var(--text-secondary);
@@ -102,4 +102,16 @@
     font-weight: bolder;
     font-size: 1.05remn;
     color: var(--bg-primary);
+}
+
+/* .input-active {
+} */
+
+.span-active {
+    transform: translateX(10px) translateY(-10px);
+    font-size: .675rem !important;
+    color: #001f3f;
+    background-color: #1b8dc2;
+    border-radius: .25rem;
+    padding: 5px 10px !important;
 }

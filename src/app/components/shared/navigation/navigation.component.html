@@ -6,7 +6,10 @@
             <li routerLink="/contacto" class="link-item">Contacto</li>
         </ul>
         <div class="option-user">
-            <a class="link-item" routerLink="/login">Login</a>
+            <a *ngIf="!sesionActiva; else sesionElse" class="link-item" routerLink="/login">Login</a>
+            <ng-template #sesionElse>
+                <a class="link-item" (click)="logout()">Logout</a>
+            </ng-template>
         </div>
     </nav>
 </section>
