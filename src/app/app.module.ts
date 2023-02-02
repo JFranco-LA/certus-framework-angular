@@ -3,14 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactoComponent } from './views/contacto/contacto.component';
+import { InicioComponent } from './views/inicio/inicio.component';
+import { UsuariosComponent } from './views/usuarios/usuarios.component';
+import { NavigationComponent } from './components/shared/navigation/navigation.component';
+import { WaveComponent } from './components/shared/wave/wave.component';
+import { LoginComponent } from './components/forms/login/login.component';
+import { RecoverPassComponent } from './components/forms/recover-pass/recover-pass.component';
+import { RegisterComponent } from './components/forms/register/register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './components/forms/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SpinnerComponent } from './components/shared/spinner/spinner.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContactoComponent,
+    InicioComponent,
+    UsuariosComponent,
+    NavigationComponent,
+    WaveComponent,
+    LoginComponent,
+    RecoverPassComponent,
+    RegisterComponent,
+    ContactComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

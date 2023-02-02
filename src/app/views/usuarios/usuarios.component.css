@@ -1,0 +1,44 @@
+.table-users__container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+thead {
+    font-size: 1.35rem;
+}
+
+tbody {
+    color: var(--bg-primary);
+    background-color: var(--text-primary);
+    font-size: 1.175rem;
+}
+
+th {
+    padding: .45rem 2rem;
+    background-color: #003e57;
+    color: white;
+}
+
+td {
+    padding: .55rem 1rem;
+}
+
+.imagen-table{
+    border-radius: 50%;
+    height: 3rem;
+}
+
+.td-image{
+    text-align: center;
+}
+
+.imagen-table:hover{
+    transform: scale(1.1);
+}
+
+tr:hover{
+    background-color: #003e57;
+    color: var(--text-primary);
+}

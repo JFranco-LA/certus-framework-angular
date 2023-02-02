@@ -1,0 +1,105 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    padding: .5rem;
+    /* background-color: #1d2b3a; */
+    width: 30vw;
+    height: 48vh;
+    padding-left: 1rem;
+}
+
+.form__title{
+    font-size: 2.45rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    margin-top: .85rem;
+    padding-left: 1rem;
+    color: var(--text-secondary);
+    text-decoration: underline;
+    letter-spacing: 0.025rem;
+}
+
+.inputBox {
+    position: relative;
+    width: 20rem;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: .75rem;
+    border: none;
+    border: 1px solid rgba(118, 147, 163, 0.25);
+    background-color: #b8d9ff;
+    border-radius: .25rem;
+    outline: none;
+    color: rgb(40, 71, 112);
+    font-size: .85rem;
+    transition: .5s;
+}
+
+
+.inputBox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    text-transform: uppercase;
+    color: rgba(32, 64, 90, 0.699);
+    font-size: .85rem;
+    transition: .5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span,
+.inputBox textarea:valid~span,
+.inputBox textarea:focus~span {
+    color: #001f3f;
+    transform: translateX(10px) translateY(-8px);
+    font-size: .65rem;
+    padding: 5px 10px;
+    background-color: #1b8dc2;
+    border-radius: .25rem;
+}
+
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #00dfc4;
+}
+
+.inputBox input:hover {
+    border: 1px solid #009281;
+}
+
+.btn {
+    background-color: var(--bg-alternative);
+    height: 2.45rem;
+    width: 12rem;
+    color: var(--text-primary);
+    border-radius: .25rem;
+    border: 1px solid rgba(255, 255, 255, .25);
+    transition: .5s;
+}
+
+
+.btn:hover {
+    border-color: var(--bg-primary);
+    font-weight: bolder;
+    font-size: 1.05remn;
+    color: var(--bg-primary);
+}

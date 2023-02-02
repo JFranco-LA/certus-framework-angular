@@ -1,0 +1,24 @@
+<section class="table-users__container">
+    <table>
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Usuario</th>
+                <th>Dirección</th>
+                <th>Web personal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <td class="td-image"><img [src]="usuario.foto" [alt]="usuario.foto" class="imagen-table"></td>
+                <td>{{usuario.name}}</td>
+                <td>{{usuario.email}}</td>
+                <td>{{usuario.username}}</td>
+                <td>{{usuario.address.street}}, {{usuario.address.city}}</td>
+                <td>{{usuario.website}}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
