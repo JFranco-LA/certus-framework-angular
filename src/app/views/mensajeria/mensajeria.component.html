@@ -1,3 +1,26 @@
-<section>
-    <p>Todos los Mensajes:</p>
+<section class="section-messages">
+
+    <article>
+        <div class="barra-mensajes">
+            <div><i class="fas fa-envelope"></i></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="contenido-vacio" *ngIf="listaMensajes.length == 0; else blockElse">
+            <p> La bandeja de mensajes se encuentra vacía.</p>
+        </div>
+        <ng-template #blockElse>
+            <!-- <h3>Todos los Mensajes:</h3> -->
+            <div class="messages-container" *ngFor="let mensaje of listaMensajes">
+                <div class="contenido">
+                    <div class="contenido-title">
+                        <h4>Enviado por: {{mensaje.name}}</h4>
+                        <a class="delete" (click)="deleteMessage(mensaje.id)"><i class="fas fa-trash"></i></a>
+                    </div>
+                    <h5>email: {{mensaje.email}}</h5>
+                    <p>Mensaje: {{mensaje.message}}</p>
+                    <p>enviado desde: {{mensaje.country}}</p>
+                </div>
+            </div>
+        </ng-template>
+    </article>
 </section>

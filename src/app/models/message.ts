@@ -1,4 +1,5 @@
 export class Message {
+    id?: string;
     name: string;
     email: string;
     country: string;

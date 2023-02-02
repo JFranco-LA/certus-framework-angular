@@ -13,7 +13,8 @@ import { Subscription } from 'rxjs';
 export class NavigationComponent implements OnInit {
   sesionActiva = false;
   dataUser: any;
-  correoAdmin = 'jfranco.abrahan@gmail.com';
+  // correoAdmin = 'jfranco.abrahan@gmail.com';
+  
 
   private sessionSubscription!: Subscription;
 
