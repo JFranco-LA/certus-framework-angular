@@ -1,26 +1,26 @@
 <div class="form-container">
-    <form class="formulario ">
+    <form class="formulario"  [formGroup]="messageForm" (ngSubmit)="sendMessage()">
         <h2 class="form__title">Contáctame</h2>
         <div class="inputBox caja1 --active">
-            <input class="input-active" type="text" required disabled [value]="email">
+            <input class="input-active" type="text" required [value]="email" formControlName="email">
             <span class="span-active">Email: </span>
         </div>
         <div class="inputBox caja2">
-            <input type="text" required>
+            <input type="text" required formControlName="name">
             <span>Nombre: </span>
         </div>
 
         <div class="inputBox caja3">
-            <input type="text" required>
+            <input type="text" required formControlName="country"> 
             <span>Localidad: </span>
         </div>
 
         <div class="inputBox caja4">
-            <textarea id="w3review" name="w3review" rows="4" cols="50" required></textarea>
+            <textarea id="w3review" name="w3review" rows="4" cols="50" required formControlName="message"></textarea>
             <span>Mensaje: </span>
         </div>
         <div class="caja5">
-            <button class="btn" type="submit">Enviar Mensaje</button>
+            <button [disabled]="email == ''" class="btn" type="submit">Enviar Mensaje</button>
         </div>
         <div>
             <p *ngIf="!dataUser" class="text">Para contactar conmigo tienes que estar logeado en la página</p>

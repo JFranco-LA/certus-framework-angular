@@ -13,6 +13,7 @@ import { Subscription } from 'rxjs';
 export class NavigationComponent implements OnInit {
   sesionActiva = false;
   dataUser: any;
+  correoAdmin = 'jfranco.abrahan@gmail.com';
 
   private sessionSubscription!: Subscription;
 
@@ -27,6 +28,11 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
     this.sessionSubscription = this.sesionUser.currentSessionStatus.subscribe(status => {
       this.sesionActiva = status;
+    });
+    this.auth.currentUser.then((user) => {
+      if (user) {
+        this.dataUser = user;
+      }
     });
   }
 

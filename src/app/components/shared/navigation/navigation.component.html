@@ -4,6 +4,8 @@
             <li routerLink="/inicio" class="link-item">Inico</li>
             <li routerLink="/usuarios" class="link-item">Usuarios</li>
             <li routerLink="/contacto" class="link-item">Contacto</li>
+            <li *ngIf="sesionActiva" routerLink="/mensajeria" class="link-item">Mensajes</li>
+            
         </ul>
         <div class="option-user">
             <a *ngIf="!sesionActiva; else sesionElse" class="link-item" routerLink="/login">Login</a>

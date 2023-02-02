@@ -5,6 +5,7 @@ import { RecoverPassComponent } from './components/forms/recover-pass/recover-pa
 import { RegisterComponent } from './components/forms/register/register.component';
 import { ContactoComponent } from './views/contacto/contacto.component';
 import { InicioComponent } from './views/inicio/inicio.component';
+import { MensajeriaComponent } from './views/mensajeria/mensajeria.component';
 import { UsuariosComponent } from './views/usuarios/usuarios.component';
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'contacto', component: ContactoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'recover-pass', component: RecoverPassComponent}
+  {path: 'recover-pass', component: RecoverPassComponent},
+  {path: 'mensajeria', component: MensajeriaComponent}
 ];
 
 @NgModule({

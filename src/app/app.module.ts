@@ -24,7 +24,9 @@ import { ToastrModule } from 'ngx-toastr';
 
 // FIREBASE
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { environment } from 'src/environments/environment.prod';
+import { MensajeriaComponent } from './views/mensajeria/mensajeria.component';
 
 
 @NgModule({
@@ -40,6 +42,7 @@ import { environment } from 'src/environments/environment.prod';
     RegisterComponent,
     ContactComponent,
     SpinnerComponent,
+    MensajeriaComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { environment } from 'src/environments/environment.prod';
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
 
   ],
   providers: [],
